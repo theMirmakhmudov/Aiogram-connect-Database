@@ -3,13 +3,13 @@ import logging
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import Message
 from aiogram.filters.command import Command
-from root import TOKEN
+from config import Token
 
 from db import Database
 
 db = Database("preson.db")
 
-bot = Bot(token=TOKEN)
+bot = Bot(token=Token)
 dp = Dispatcher()
 
 
